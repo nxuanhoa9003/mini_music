@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./accsets/css/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Music</title>
+  </head>
+  <body>
+    <div class="player">
+      <div class="dashboard">
+        <!-- header -->
+        <header>
+          <h4>Now Playing</h4>
+          <h2>Sting 57th & 9th</h2>
+        </header>
+
+        <!-- CD -->
+        <div class="cd">
+          <div
+            class="cd-thumb"
+            style="
+              background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg');
+            "
+          ></div>
+        </div>
+        <!-- control -->
+        <div class="control">
+          <div class="btn btn-repeat">
+            <i class="bx bx-revision"></i>
+          </div>
+          <div class="btn btn-prev">
+            <i class="bx bx-skip-previous"></i>
+          </div>
+          <div class="btn btn-toggle-play">
+            <i class="bx bx-pause icon-pause"></i>
+            <i class="bx bx-play icon-play"></i>
+          </div>
+          <div class="btn btn-next">
+            <i class="bx bx-skip-next"></i>
+          </div>
+
+          <div class="btn btn-random">
+            <i class="bx bx-shuffle"></i>
+          </div>
+        </div>
+
+        <input
+          id="progress"
+          class="progress"
+          type="range"
+          value="0"
+          step="1"
+          min="0"
+          max="100"
+        />
+
+        <audio id="audio" src=""></audio>
+      </div>
+
+      <!-- playlist -->
+      <div class="playlist"></div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
